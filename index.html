@@ -24,6 +24,7 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+
 </head>
 
 <style>
@@ -68,13 +69,13 @@
         <div class="container my-auto">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h1 class="text-uppercase">
+                    <h1 class="text-uppercase" style="color:#b24730">
                         <strong>Trump vs Obama</strong>
                     </h1>
                     <hr>
                 </div>
                 <div class="col-lg-8 mx-auto">
-                    <h3 class="text-faded mb-5">Social Media Sentiment Analytics Using R &amp; Twitter API</h3>
+                    <h3 class="text-faded mb-5" style="color:#b24730">Social Media Sentiment Analytics Using R &amp; Twitter API</h3>
                 </div>
             </div>
         </div>
@@ -105,23 +106,86 @@
                     <p>The reason for setting "@" as search words instead of "#" (hashtags) was that, on Twitter, people often use "@" to talk or reply to soembody, while they would use "#“ to hashtag certain topic. That is to say, by searching the "@",
                         more direct opinion about the two people could be generated.</p>
                     <p>Looking at the results of the analysis, it's clear that <strong>people generally holds opposite opinions towards them, while the tweets on Dnoald Trump have more sentiment than those on Barack Obama</strong>.</p>
-                    <p>Getting 4469 recent tweets on twitter, the word count result shows that winning team and their fans are dominent the social media with various celebrating words and slogan, as the total number of "eagles" and "flyeaglesfly" overrides
-                        the number of the rival "patriots".
-                    </p>
                     <iframe width="1000" height="600" frameborder="0" scrolling="no" src="//plot.ly/~JuliannaWQY/13.embed"></iframe>
-                    <p>Performace before the match, which has become one of the nation's tradition, was pretty hot on Twitter as well. Singer Justice Timberlake, the words like "performance", "show" and "music" are all visible on the chart.</p>
-                    <P>However, part of the reason why Timberlake is a hot word now may because of something else on the performance, this would be explained later with specific tweet.</P>
+                    <p>As the chart above shows, people on Twitter holds stronger emotion on Trump than Obama. Maybe that's because Trump is more accosiated with the current affairs than the previous president does.</p>
+                    <p>Look deeper into the word cloud of the tweets that @ each president, "guns" appears frequently in Donald Trump's. Together with the hot news topics, words like "will", "people", "said" are obiviously seen, they may come from the president's
+                        speech or quotes, which shows his devotion on "make America great again".</p>
+                    <p>Interestingly, as he's not in power anymore, Obama's campaigner accounts for a big propotion on the tweets that @ him. </p>
+                    <p>The tweets that @obama are more likely to include Trump than the inverse.</p>
                     <img src="img/chart.jpg">
                 </div>
                 <div class="col-lg-12 text-center">
                     <br><br>
-                    <p>To take a closer look at the differences between the two side of the game one week after the final, below are the word cloud of the tweets that go with hashtag <a href="https://twitter.com/hashtag/patriots?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag">#patriots</a>                        and <a href="https://twitter.com/search?q=%23eagles&src=typd">#eagle</a> respectively.
-                    </p>
-                    <p>The tweets with #eagles are more about celebration. The slogan took a great part of all the text tweeted with #eagles. "Champion", "win", "eaglesnation", "best"...words like these were frequently seen.</p>
+                    <p>Looking at the 8 states' sentiment on the two presidents.</p>
+                    <p>On a large scale, no matter positive or negative terms, Obama and Trump's results are totally on the contrary to each other. Trump is more welcome in North Carolina, Texas, Florida and Virginia while Obama is more welcome in Calnifornia
+                        and Massachusetts.</p>
                     <iframe width="1000" height="500" frameborder="0" scrolling="no" src="//plot.ly/~JuliannaWQY/22.embed"></iframe>
-                    <p>However, the coverage of Super Bowl experienced a sharp decline on 2013, while the other three leagurs' coverage raised since then.</p>
-                    <p>Due to the election and heavier global terrorists, year 2016 was a cold time for sports reports in general.</p>
+                    <p>Arizona and Calnifornia seem to like and hate Obama a lot at the same time. Arizona also doesn't have too much emotion towards Trump.</p>
+                    <p>Compare the y-axis of the two charts, it's clear that the good tweets about the two presidents outnumbered those that talk bad on them.</p>
                     <iframe width="1000" height="500" frameborder="0" scrolling="no" src="//plot.ly/~JuliannaWQY/20.embed"></iframe>
+                    <p>Here are two tables on which states have the highest number of @ on the two presidents:</p>
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <strong>Donald Trump</strong>
+                            <table class="table table-hover table-bordered">
+                                <tr>
+                                    <th>States</th>
+                                    <th>Number of @</th>
+                                </tr>
+                                <tr>
+                                    <td>Texas</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Florida</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td>Virginia</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td>Calnifornia</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Washington</td>
+                                    <td>8</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <strong>Barack Obama</strong>
+                            <table class="table table-hover table-bordered">
+                                <tr>
+                                    <th>States</th>
+                                    <th>Number of @</th>
+                                </tr>
+                                <tr>
+                                    <td>Texas</td>
+                                    <td>65</td>
+                                </tr>
+                                <tr>
+                                    <td>Washington</td>
+                                    <td>31</td>
+                                </tr>
+                                <tr>
+                                    <td>Illinois</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>Oregon</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Calnifornia</td>
+                                    <td>11</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <p>According to the result, people in Texas @s the two presidents a lot. Calnifornia and Washington are also hot states.</p>
+                    <p>The number of @BarackObama in Texas was oddly high in the time period, two quaters of them come from a Texas city called Arlingon, probably some campaign was going on at that time?</p>
                     <hr>
                 </div>
             </div>
